@@ -7,7 +7,7 @@ interface totalPriceType {
 
 const totalPrice = (dataPrice: totalPriceType): number => {
   const { price, discount, isInstallment, months } = dataPrice
-  console.log('dataPrice: ', dataPrice);
+
   if (price <= 0) return 0;
   let sum: number = price;
 
