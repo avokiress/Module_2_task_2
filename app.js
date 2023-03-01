@@ -1,6 +1,5 @@
-var totalPrice = function (dataPrice) {
-    var price = dataPrice.price, discount = dataPrice.discount, isInstallment = dataPrice.isInstallment, months = dataPrice.months;
-    console.log('dataPrice: ', dataPrice);
+var totalPrice = function (_a) {
+    var price = _a.price, discount = _a.discount, isInstallment = _a.isInstallment, months = _a.months;
     if (price <= 0)
         return 0;
     var sum = price;

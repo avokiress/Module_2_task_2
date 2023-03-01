@@ -5,9 +5,7 @@ interface totalPriceType {
   months: number
 }
 
-const totalPrice = (dataPrice: totalPriceType): number => {
-  const { price, discount, isInstallment, months } = dataPrice
-
+const totalPrice = ({ price, discount, isInstallment, months }: totalPriceType): number => {
   if (price <= 0) return 0;
   let sum: number = price;
 
